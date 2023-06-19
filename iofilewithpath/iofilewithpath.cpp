@@ -26,3 +26,11 @@ int main() {
 		if (baris == "q") break;
 		//menulis dan memasukkan nilai dari 'baris' ke dalam file
 		outfile << baris << endl;
+	}
+	//selesai dalam menulis seakrang tutup filenya
+	outfile.close();
+
+	//membuka file dalam mode membaca
+	ifstream infile;
+	//menunjuk ke sebuah file
+	infile.open(NamaFile, ios::in);
